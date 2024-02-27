@@ -1,0 +1,49 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .div{
+      
+      text-align: center;
+      /* align-items: center; */
+      /* align-content: center; */
+      align-self: center;
+   font-size: 20px;
+    }
+    .div>button{
+      color: blue;
+      text-decoration-color: black;
+    }
+    img{
+      height: 150px;
+      width: 180px;
+    }
+  </style>
+</head>
+<body>
+  <h1>how to instagram data in from ejs </h1>
+  <div class="div">
+    <button>follow</button>
+  <button>message</button>
+  </div>
+
+ <div>
+  <h2>hello guice i am @:<%=username%> khan</h2>
+ </div><br><hr>
+<p> followers : <%=data.followers%>&nbsp; &nbsp; &nbsp;followings : <%=data.following%></p>
+<% for(post of data.posts){ %>
+  <img src="<%=post.image%>" alt="">
+  <p> Likes : <%=post.likes%>&nbsp; &nbsp;&nbsp;followings : <%=post.comments%></p>
+<% } %>
+
+<br><br><br> <%- include("includes/footer.ejs")%>
+</body>
+</html>

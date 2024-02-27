@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>hello world</h1>
+
+  <h2>number : 73+8</h2>
+  <h2>number :  <%= 938+9493%></h2>
+    <h3> this is a very import value : <%=number%></h3>
+ <div>
+  <p> this is a favorate random number  : <b> <i> <%=number  %></i></b>
+  <%if(number>=10){%>
+    <h1> wow wow wow anything doubt ?</h1>
+    
+  <%}%>
+  
+</p>
+  <%for (let name of array){%>
+    <li> <%=name%></li>
+   <%}%>
+  <button>follow</button>
+  <button>followers</button></div>
+<br><br><br>
+<%- include("includes/footer.ejs")%> 
+</body>
+</html>
